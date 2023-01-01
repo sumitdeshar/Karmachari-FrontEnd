@@ -104,11 +104,28 @@ button
 .clock_section
 {
     text-align: center;
-    height: 30%;
+    height: fit-content;
+    border-bottom: 1px solid #000;
+    padding-bottom: 1.2rem;
 }
 .clock_section .avatar
 {
-    width: 9rem;
-    margin: 8px auto;
+    width: 60%;
+    margin: .3rem auto .6rem;
     border-radius: 50%;
 }
+.clock
+{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: .6rem auto .3rem auto ;
+}
+.clock_section button
+{
+    background-color: green;
+    color: var(--text-light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
