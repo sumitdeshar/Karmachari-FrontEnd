@@ -1,12 +1,13 @@
 :root
 {
 /* ==================MAIN TEXTS ==================*/
-    --primary-color: blue;
+    --primary-color: hwb(240 25% 47%);
+    --primary-color-alt: hwb(240 28% 60%);
 /* =====================TEXTS ======================*/
     --text-dark-color: #333;
     --text-light-color: whitesmoke;
 }
-
+/* =====================Global CSS ===================== */
 *
 {
     margin: 0;
@@ -28,8 +29,11 @@ button
     border: none;
     cursor: pointer;
 }
+/* =====================CSS FOR PAGE ===================== */
 .nav-bar
 {
+    height: 3.2rem;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background: var(--primary-color);
@@ -37,8 +41,18 @@ button
 }
 .logo
 {
+    padding: 0 10px;
+    line-height: 2.6rem;
     color: var(--text-light-color);
     font-size: 1.3rem;
+}
+.logo:hover
+{
+    font-weight: bold;
+}
+.logo_container
+{
+    align-items: center;
 }
 .drop-down
 {
@@ -57,4 +71,9 @@ button
     transform: translateY(-8px);
     color: var(--text-light-color);
     padding: 4px 8px;
+}
+.drop-down:hover
+{
+    background: var(--primary-color-alt);
+    color: #000;
 }
