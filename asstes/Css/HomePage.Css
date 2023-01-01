@@ -1,8 +1,8 @@
 :root
 {
 /* ==================MAIN TEXTS ==================*/
-    --primary-color: hwb(240 25% 47%);
-    --primary-color-alt: hwb(240 28% 60%);
+    --primary-color: hsl(240, 40%, 50%);
+    --primary-color-alt: hsl(240, 40%, 90%);
 /* =====================TEXTS ======================*/
     --text-dark-color: #333;
     --text-light-color: whitesmoke;
@@ -17,7 +17,7 @@
 body
 {
     background-color: whitesmoke;
-    font-family: 'Poppins',sans-serif;
+    font-family: sans-serif;
 }
 a
 {
@@ -29,10 +29,10 @@ button
     border: none;
     cursor: pointer;
 }
-/* =====================CSS FOR PAGE ===================== */
+/* ===================== Nav_bar ===================== */
 .nav-bar
 {
-    height: 3.2rem;
+    height: 3rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -41,39 +41,74 @@ button
 }
 .logo
 {
-    padding: 0 10px;
     line-height: 2.6rem;
     color: var(--text-light-color);
     font-size: 1.3rem;
 }
 .logo:hover
 {
-    font-weight: bold;
+    color: var(--primary-color-alt);
 }
 .logo_container
 {
-    align-items: center;
+    width: 10%;
+    text-align: center;
 }
 .drop-down
 {
     cursor: pointer;
-    border: 2px solid;
+    border: 2px solid var(--primary-color-alt);
+    width: fit-content;
     padding: 0.01em 0.5em;
+    transition: 0.3s;
 }
 .drop-down .avatar
 {
-    transform: translateY(5px);
+    transform: translateY(3px);
     width: 35px;
     border-radius: 50%;
 }
 .drop-down button
 {
     transform: translateY(-8px);
+    text-align: center;
     color: var(--text-light-color);
     padding: 4px 8px;
 }
 .drop-down:hover
 {
     background: var(--primary-color-alt);
-    color: #000;
+    border-color: black;
+}
+.drop-down:hover button
+{
+    color: var(--text-dark-color);
+}
+.drop-down:hover .avatar
+{
+    border: 1px solid black;
+}
+/* =====================Sidebar ===================== */
+.side_bar
+{
+    background-color: var(--primary-color-alt);
+    position: absolute;
+    top: 3rem;left: 0;
+    width: 18%;
+    height: 100%;
+}
+.container
+{
+    padding: 2px 4px;
+}
+.clock_section
+{
+    text-align: center;
+    height: 30%;
+}
+.clock_section .avatar
+{
+    width: 9rem;
+    margin: 8px auto;
+    border-radius: 50%;
 }
