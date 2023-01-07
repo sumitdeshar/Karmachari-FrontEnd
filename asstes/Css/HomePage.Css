@@ -126,7 +126,7 @@ button
 }
 .clock_section button
 {
-    background-color: lightgreen;
+    background-color: hsl(120, 50%, 50%);
     color: var(--text-light-color);
     padding: 10px 20px;
     font-weight: bold;
