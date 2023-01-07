@@ -3,6 +3,8 @@
 /* ==================MAIN TEXTS ==================*/
     --primary-color: hsl(240, 40%, 50%);
     --primary-color-alt: hsl(240, 40%, 90%);
+    --dark-color:hsl(0, 0%, 20%);
+    --dark-color-alt: hsl(0, 0%, 36%);
 /* =====================TEXTS ======================*/
     --text-dark-color: #333;
     --text-light-color: whitesmoke;
@@ -55,7 +57,7 @@ button
     text-align: center;
 }
 .drop-down
-{
+{  
     cursor: pointer;
     border: 2px solid var(--primary-color-alt);
     width: fit-content;
@@ -70,7 +72,7 @@ button
 }
 .drop-down button
 {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
     text-align: center;
     color: var(--text-light-color);
     padding: 4px 8px;
@@ -94,8 +96,8 @@ button
     background-color: var(--primary-color-alt);
     position: absolute;
     top: 3rem;left: 0;
-    width: 18%;
-    height: 100%;
+    width: 16%;
+    height: 92.7vh;
 }
 .container
 {
@@ -103,9 +105,10 @@ button
 }
 .clock_section
 {
+    background-color: var(--dark-color);
     text-align: center;
     height: fit-content;
-    border-bottom: 1px solid #000;
+    border-bottom: 4px solid #000;
     padding-bottom: 1.2rem;
 }
 .clock_section .avatar
@@ -116,16 +119,45 @@ button
 }
 .clock
 {
+    color: var(--text-light-color);
     font-weight: bold;
     font-size: 1.5rem;
     margin: .6rem auto .3rem auto ;
 }
 .clock_section button
 {
-    background-color: green;
+    background-color: lightgreen;
     color: var(--text-light-color);
     padding: 10px 20px;
     font-weight: bold;
     font-size: 1rem;
 }
-/*final day of  the sick leave
+/* =====================Menu Items===================== */
+.menu_elements
+{
+
+    background: hsl(0, 0%, 20%);
+}
+.menu_item a
+{
+    color: whitesmoke;
+    transition: .3s;
+}
+.menu_item
+{
+    padding: 1rem 1.5rem;
+    width: 100%;
+    transition: .3s;
+}
+.menu_item:hover
+{
+    cursor: pointer;
+    border-left: 4px solid var(--primary-color);
+    background-color: var(--dark-color-alt);
+}
+.menu_item:hover a
+{
+    color: var(--primary-color-alt);
+}
+
+
