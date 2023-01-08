@@ -25,6 +25,7 @@ body
 }
 a
 {
+    font-size: .9rem;
     text-decoration: none;
 }
 button
@@ -101,34 +102,63 @@ li
 .sub-menu-wrap
 {
     position: absolute;
-    top: 3rem;
+    top: 3.2rem;
     right: 1%;
-    background-color: #ccc;
+    background-color: var(--dark-color);
+    opacity: .9;
     max-height: 50%;
     width: 20%;
     overflow: hidden;
-}
-.sub-menu
-{
-    background-color: #e5e5e5;
 }
 
 .sub-menu ul
 {
     text-align: left;
 }
+.sub-item-icon
+{
+    margin-right: 1.5rem;
+    background-color: var(--primary-color-alt);
+    color: var(--text-dark-color);
+    font-size: .9rem;
+    padding: .3rem;
+    border-radius: 50%;
+}
+.arrow-icon
+{
+    position: absolute;
+    right: 8%;
+    /* transform: translateY(.3rem); */
+    transition: .3s;
+}
 .sub-item a
 {
-    color: var(--text-dark-color);
-    font-weight: bold;
+    color: var(--text-light-color);
     transition: .3s;
 }
 .sub-item
 {
-    padding: 1rem 1.5rem;
+    padding: .3rem 1.5rem;
     width: 100%;
     cursor: pointer;
     transition: .3s;
+}
+.sub-item:hover
+{
+    background-color:var(--dark-color-alt) ;
+}
+.sub-item .arrow-icon
+{
+    transform: translateY(.3rem);
+}
+.sub-item:hover .arrow-icon
+{
+    color: var(--primary-color-alt);
+    transform: translate3d(.6rem,.3rem,0);
+}
+.sub-item:hover a
+{
+    color: var(--primary-color-alt);
 }
 .sub-menu-active
 {
@@ -194,6 +224,7 @@ li
 {
     color: whitesmoke;
     transition: .3s;
+    font-style: 0.3rem;
 }
 .menu_item
 {
@@ -211,5 +242,12 @@ li
 {
     color: var(--primary-color-alt);
 }
-
+.menu-icon 
+{
+    margin-right: 1rem;
+}
+.menu_item:hover .menu-icon
+{
+    color: var(--primary-color-alt);
+}
 
