@@ -1,10 +1,12 @@
 :root
 {
-/* ==================MAIN TEXTS ==================*/
+/* ==================MAIN COLORS==================*/
     --primary-color: hsl(240, 40%, 50%);
     --primary-color-alt: hsl(240, 40%, 90%);
     --dark-color:hsl(0, 0%, 20%);
     --dark-color-alt: hsl(0, 0%, 36%);
+    --Checkin:hsl(120, 50%, 50%);
+    --Checkin-hover:hsl(120, 50%, 30%);
 /* =====================TEXTS ======================*/
     --text-dark-color: #333;
     --text-light-color: whitesmoke;
@@ -31,6 +33,10 @@ button
     border: none;
     cursor: pointer;
 }
+li
+{
+    list-style: none;
+}
 /* ===================== Nav_bar ===================== */
 .nav-bar
 {
@@ -38,6 +44,7 @@ button
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: relative;
     background: var(--primary-color);
     padding: 0.1em  1em;
 }
@@ -90,6 +97,46 @@ button
 {
     border: 1px solid black;
 }
+/* =====================Sub menu===================== */
+.sub-menu-wrap
+{
+    position: absolute;
+    top: 3rem;
+    right: 1%;
+    background-color: #ccc;
+    max-height: 50%;
+    width: 20%;
+    overflow: hidden;
+}
+.sub-menu
+{
+    background-color: #e5e5e5;
+}
+
+.sub-menu ul
+{
+    text-align: left;
+}
+.sub-item a
+{
+    color: var(--text-dark-color);
+    font-weight: bold;
+    transition: .3s;
+}
+.sub-item
+{
+    padding: 1rem 1.5rem;
+    width: 100%;
+    cursor: pointer;
+    transition: .3s;
+}
+.sub-menu-active
+{
+    max-height:50% ;
+}
+
+
+
 /* =====================Sidebar ===================== */
 .side_bar
 {
@@ -126,11 +173,16 @@ button
 }
 .clock_section button
 {
-    background-color: hsl(120, 50%, 50%);
+    background-color: var(--Checkin);
     color: var(--text-light-color);
     padding: 10px 20px;
     font-weight: bold;
     font-size: 1rem;
+    transition: .3s;
+}
+.clock_section button:hover
+{
+    background-color: var(--Checkin-hover);
 }
 /* =====================Menu Items===================== */
 .menu_elements
