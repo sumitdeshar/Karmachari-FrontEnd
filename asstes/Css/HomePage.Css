@@ -106,11 +106,14 @@ li
     right: 1%;
     background-color: var(--dark-color);
     opacity: .9;
-    max-height: 50%;
+    max-height: 0%;
     width: 20%;
     overflow: hidden;
 }
-
+.active-menu
+{
+    max-height: 50%;
+}
 .sub-menu ul
 {
     text-align: left;
@@ -250,4 +253,5 @@ li
 {
     color: var(--primary-color-alt);
 }
+
 
