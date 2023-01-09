@@ -109,6 +109,7 @@ li
     max-height: 0%;
     width: 20%;
     overflow: hidden;
+    transition: .3s;
 }
 .active-menu
 {
