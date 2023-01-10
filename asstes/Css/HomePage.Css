@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 :root
 {
 /* ==================MAIN COLORS==================*/
@@ -9,6 +10,7 @@
     --Checkin-hover:hsl(120, 50%, 30%);
 /* =====================TEXTS ======================*/
     --text-dark-color: #333;
+    --text-dark-color-alt:grey;
     --text-light-color: whitesmoke;
 }
 /* =====================Global CSS ===================== */
@@ -17,15 +19,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppins',sans-serif ;
+    font-size: 1rem;
 }
 body
 {
     background-color: whitesmoke;
     font-family: sans-serif;
 }
+span
+{
+    font-size: inherit;
+}
 a
 {
-    font-size: .9rem;
+    font-size: .7rem;
     text-decoration: none;
 }
 button
@@ -172,40 +180,60 @@ li
 
 
 /* =====================Sidebar ===================== */
-.side_bar
-{
-    background-color: var(--primary-color-alt);
-    position: absolute;
-    top: 3rem;left: 0;
-    width: 16%;
-    height: 92.7vh;
-}
 .container
 {
     padding: 2px 4px;
+}
+.side_bar
+{
+    background-color: var(--dark-color-alt);
+    position: absolute;
+    top: 3rem;left: 0;
+    width: 15%;
+    height: 92.7vh;
 }
 .clock_section
 {
     background-color: var(--dark-color);
     text-align: center;
     height: fit-content;
-    border-bottom: 4px solid #000;
-    padding-bottom: 1.2rem;
+    border-bottom: .3rem solid #000;
+    padding-bottom: .7rem;
+
 }
 .clock_section .avatar
 {
-    width: 60%;
+    width: 50%;
     margin: .3rem auto .6rem;
     border-radius: 50%;
+    border: .6px solid var(--text-light-color);
 }
 .clock
 {
     color: var(--text-light-color);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: .6rem auto .3rem auto ;
 }
-.clock_section button
+.check-in-out
+{
+    display: flex;
+    justify-content:space-between;
+    padding: .3rem 1rem;
+    text-align: left;
+    color: var(--text-dark-color-alt);
+    margin-bottom: 0rem;
+}
+.Title-data
+{
+    font-size: .8rem;
+}
+p.time-data
+{
+    font-size: .8rem;
+}
+
+.check-inout-btn
 {
     background-color: var(--Checkin);
     color: var(--text-light-color);
@@ -213,6 +241,7 @@ li
     font-weight: bold;
     font-size: 1rem;
     transition: .3s;
+    margin-top: .2rem;
 }
 .clock_section button:hover
 {
@@ -223,6 +252,7 @@ li
 {
 
     background: hsl(0, 0%, 20%);
+
 }
 .menu_item a
 {
