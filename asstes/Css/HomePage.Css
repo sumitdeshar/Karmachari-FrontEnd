@@ -2,8 +2,8 @@
 :root
 {
 /* ==================MAIN COLORS==================*/
-    --primary-color: hsl(240, 80%, 55%);
-    --primary-color-alt: hsl(240, 30%, 70%);
+    --primary-color: hsl(230, 69%, 61%);
+    --primary-color-alt: hsl(240, 59%, 70%);
     --dark-color:hsl(0, 0%, 20%);
     --dark-color-alt: hsl(0, 0%, 36%);
     --Checkin:hsl(120, 50%, 50%);
@@ -53,7 +53,8 @@ li
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    z-index: 99;
     background: var(--primary-color);
     padding: 0.1em  1em;
 }
@@ -115,7 +116,8 @@ li
     background-color: var(--dark-color);
     opacity: .9;
     max-height: 0%;
-    width: 20%;
+    border-radius: 5px;
+    width: 17%;
     overflow: hidden;
     transition: .3s;
 }
@@ -150,7 +152,7 @@ li
 }
 .sub-item
 {
-    padding: .3rem 1.5rem;
+    padding: .3rem 1rem;
     width: 100%;
     cursor: pointer;
     transition: .3s;
@@ -166,7 +168,7 @@ li
 .sub-item:hover .arrow-icon
 {
     color: var(--primary-color-alt);
-    transform: translate3d(.6rem,.3rem,0);
+    transform: translate3d(.3rem,.3rem,0);
 }
 .sub-item:hover a
 {
@@ -239,6 +241,7 @@ p.time-data
     color: var(--text-light-color);
     padding: 10px 20px;
     font-weight: bold;
+    border-radius: 8px;
     font-size: 1rem;
     transition: .3s;
     margin-top: .2rem;
