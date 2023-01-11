@@ -1,3 +1,5 @@
+
+// =====================Clock section==================
 function displayTime()
 {
 var dateTime = new Date();
@@ -26,9 +28,17 @@ else
 }
 setInterval(displayTime, 10);
 
+// ===================== Drop Down Menu Section =====================
+
 let subMenu=document.getElementById('sub-menu')
 let dropDown=document.getElementById('drop-down')
 dropDown.addEventListener('click',(e) =>
 {
     subMenu.classList.toggle('sub-menu-active')
+})
+
+document.addEventListener("click",function(event)
+{
+    if(event.target.closest('.sub-menu-wrap') || event.target.closest('.drop-down')) return
+    subMenu.classList.remove('sub-menu-active')
 })
