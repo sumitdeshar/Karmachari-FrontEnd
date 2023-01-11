@@ -6,6 +6,7 @@
     --primary-color-alt: hsl(240, 59%, 70%);
     --dark-color:hsl(0, 0%, 20%);
     --dark-color-alt: hsl(0, 0%, 36%);
+    --dark-selected:hsl(0, 0%, 20%);
     --Checkin:hsl(120, 50%, 50%);
     --Checkin-hover:hsl(120, 50%, 30%);
 /* =====================TEXTS ======================*/
@@ -221,23 +222,22 @@ li
 {
     display: flex;
     justify-content:space-between;
-    padding: .3rem 1rem;
+    padding: 0 1rem;
     text-align: left;
     color: var(--text-dark-color-alt);
     margin-bottom: 0rem;
 }
 .Title-data
 {
-    font-size: .8rem;
+    font-size: .74rem;
 }
 p.time-data
 {
-    font-size: .8rem;
+    font-size: .74rem;
 }
-
 .check-inout-btn
 {
-    background-color: var(--Checkin);
+
     color: var(--text-light-color);
     padding: 10px 20px;
     font-weight: bold;
@@ -246,16 +246,34 @@ p.time-data
     transition: .3s;
     margin-top: .2rem;
 }
-.clock_section button:hover
+#Check-out
+{
+    background-color: red;
+}
+#Check-in
+{
+    background-color: var(--Checkin);
+}
+#Check-in:hover
 {
     background-color: var(--Checkin-hover);
 }
+#Check-out:hover
+{
+    background-color: rgb(139, 0, 0);
+}
+#Reset
+{
+    background-color: grey;
+}
+/* .check-inout-btn:hover
+{
+    background-color: var(--Checkin-hover);
+} */
 /* =====================Menu Items===================== */
 .menu_elements
 {
-
-    background: hsl(0, 0%, 20%);
-
+    background: var(--dark-selected);
 }
 .menu_item a
 {
@@ -284,6 +302,15 @@ p.time-data
     margin-right: 1rem;
 }
 .menu_item:hover .menu-icon
+{
+    color: var(--primary-color-alt);
+}
+.active-menu
+{
+    background: var(--dark-color-alt);
+    border-left: 4px solid var(--primary-color);
+}
+.active-menu a
 {
     color: var(--primary-color-alt);
 }
