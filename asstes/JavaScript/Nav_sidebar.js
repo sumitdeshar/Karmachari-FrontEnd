@@ -61,7 +61,7 @@ checkIn.addEventListener('click',()=>
     }
     else
     {
-        ses.textContent='AM'
+        ses='AM'
     }
     checkIn.textContent="Check Out"
     console.log('hello')
@@ -88,7 +88,7 @@ function checkout()
         }
         else
         {
-            ses.textContent='AM'
+            ses='AM'
         }
     checkOut.textContent="Reset"
     outTime.textContent= hrs + " : " + min + " : " + sec + " " + ses
