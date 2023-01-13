@@ -69,7 +69,7 @@ checkIn.addEventListener('click',()=>
     checkIn.id="Check-out"
     checkout()
 })
-/*IDK WHAT TO DO*/ 
+/*Lab Work submission tomrow*/ 
 function checkout()
 {
     let checkOut=document.getElementById('Check-out')
