@@ -40,7 +40,7 @@ dropDown.addEventListener('click',(e) =>
 
 document.addEventListener("click",function(event)
 {
-    if(event.target.closest('.sub-menu-wrap') || event.target.closest('.drop-down')) return
+    if( event.target.closest('.drop-down')) return
     subMenu.classList.remove('sub-menu-active')
 })
 
@@ -76,12 +76,14 @@ else
 
     if(n==2)
     {
+
+        
         checkIn.textContent="Reset"
         document.getElementById('counter').textContent='2'
         outTime.textContent= hrs + " : " + min + " : " + sec + " " + ses
         // reset()
     }
-    if(n===3)
+    if(n==3)
     {
         checkIn.textContent="Check In"
         document.getElementById('counter').textContent=''
