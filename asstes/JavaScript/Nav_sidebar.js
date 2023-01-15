@@ -45,34 +45,55 @@ document.addEventListener("click",function(event)
 })
 
 //===================== Check in/out Time Section =====================
+
 let checkIn=document.getElementById('Check-in')
 let inTime=document.getElementById('in-time')
+let outTime=document.getElementById('out-time')
 checkIn.addEventListener('click',()=>
 {
-    var dateTime = new Date();
-    var hrs=dateTime.getHours();
-    var min=dateTime.getMinutes();
-    var sec=dateTime.getSeconds();
-    var ses = document.getElementById('session');
-    if(hrs>12)
-    {
-        hrs-=12;
-        var ses ='PM'
-    }
-    else
-    {
-        ses='AM'
-    }
-    checkIn.textContent="Check Out"
-    console.log('hello')
-    inTime.textContent= hrs + " : " + min + " : " + sec + " " +ses
-    checkIn.id="Check-out"
-    checkout()
-})
-/*Lab Work submission tomrow*/ 
-function checkout()
+var n=document.getElementById('counter').textContent
+var dateTime = new Date();
+var hrs=dateTime.getHours();
+var min=dateTime.getMinutes();
+var sec=dateTime.getSeconds();
+var ses = document.getElementById('session');
+if(hrs>12)
 {
-    let checkOut=document.getElementById('Check-out')
+    hrs-=12;
+    var ses ='PM'
+}
+else
+{
+    ses='AM'
+}
+    n++
+    if(n==1)
+    {
+        document.getElementById('counter').textContent='1'
+        checkIn.textContent="Check Out"
+        inTime.textContent= hrs + " : " + min + " : " + sec + " " +ses  
+    }
+
+    if(n==2)
+    {
+        checkIn.textContent="Reset"
+        document.getElementById('counter').textContent='2'
+        outTime.textContent= hrs + " : " + min + " : " + sec + " " + ses
+        // reset()
+    }
+    if(n===3)
+    {
+        checkIn.textContent="Check In"
+        document.getElementById('counter').textContent=''
+        outTime.textContent= "--:--:-- --"
+        inTime.textContent= "--:--:-- --"
+    }
+
+})
+
+/*function checkout()
+{
+    let checkOut=document.getElementsByClassName('check-out')
     let outTime=document.getElementById('out-time')
     checkOut.addEventListener('click',()=>
     {
@@ -93,10 +114,10 @@ function checkout()
     checkOut.textContent="Reset"
     outTime.textContent= hrs + " : " + min + " : " + sec + " " + ses
     checkOut.id="Reset"
-    reset()
-})
-}
-function reset()
+    // reset()
+    })
+}*/
+/*function reset()
 {
     let Reset=document.getElementById('Reset')
     let outTime=document.getElementById('out-time')
@@ -108,4 +129,4 @@ function reset()
     inTime.textContent= "--:--:-- --"
     Reset.id="Check-in"
     })
-}
+}*/
