@@ -106,3 +106,9 @@ document.querySelector(".close-icon").addEventListener("click",()=>
 {
     document.querySelector(".password-popup").classList.remove("active");
 });
+//close Container
+document.addEventListener("click",function(event2)
+{
+    if( event2.target.closest('.password-popup')||event2.target.closest('#password-popup')) return
+    document.querySelector(".password-popup").classList.remove('active');
+})
