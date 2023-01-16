@@ -93,42 +93,12 @@ else
 
 })
 
-/*function checkout()
+//===================== Password Popup Section =====================
+document.querySelector("#password-popup").addEventListener("click",()=>
 {
-    let checkOut=document.getElementsByClassName('check-out')
-    let outTime=document.getElementById('out-time')
-    checkOut.addEventListener('click',()=>
-    {
-        var dateTime = new Date();
-        var hrs=dateTime.getHours();
-        var min=dateTime.getMinutes();
-        var sec=dateTime.getSeconds();
-        var ses = document.getElementById('session');
-        if(hrs>12)
-        {
-            hrs-=12;
-            var ses ='PM'
-        }
-        else
-        {
-            ses='AM'
-        }
-    checkOut.textContent="Reset"
-    outTime.textContent= hrs + " : " + min + " : " + sec + " " + ses
-    checkOut.id="Reset"
-    // reset()
-    })
-}*/
-/*function reset()
+    document.querySelector(".password-popup").classList.add("active");
+});
+document.querySelector(".close-icon").addEventListener("click",()=>
 {
-    let Reset=document.getElementById('Reset')
-    let outTime=document.getElementById('out-time')
-    let inTime=document.getElementById('in-time')
-    Reset.addEventListener('click',()=>
-    {
-    Reset.textContent="Check In"
-    outTime.textContent= "--:--:-- --"
-    inTime.textContent= "--:--:-- --"
-    Reset.id="Check-in"
-    })
-}*/
+    document.querySelector(".password-popup").classList.remove("active");
+});
