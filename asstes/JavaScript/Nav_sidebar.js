@@ -71,13 +71,15 @@ else
     {
         document.getElementById('counter').textContent='1'
         checkIn.textContent="Check Out"
+        checkIn.classList.remove('Check-in')
+        checkIn.classList.add('Check-out')
         inTime.textContent= hrs + " : " + min + " : " + sec + " " +ses  
     }
-
+    
     if(n==2)
     {
-
-        
+        checkIn.classList.remove('Check-out')
+        checkIn.classList.add('Reset')
         checkIn.textContent="Reset"
         document.getElementById('counter').textContent='2'
         outTime.textContent= hrs + " : " + min + " : " + sec + " " + ses
@@ -85,6 +87,8 @@ else
     }
     if(n==3)
     {
+        checkIn.classList.remove('Reset')
+        checkIn.classList.add('Check-in')
         checkIn.textContent="Check In"
         document.getElementById('counter').textContent=''
         outTime.textContent= "--:--:-- --"

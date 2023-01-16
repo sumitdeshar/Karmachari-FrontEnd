@@ -250,30 +250,27 @@ p.time-data
     transition: .3s;
     margin-top: .2rem;
 }
-#Check-out
+.Check-out
 {
     background-color: red;
 }
-#Check-in
+.Check-in
 {
     background-color: var(--Checkin);
 }
-#Check-in:hover
+.Check-in:hover
 {
     background-color: var(--Checkin-hover);
 }
-#Check-out:hover
+.Check-out:hover
 {
     background-color: rgb(139, 0, 0);
 }
-#Reset
+.Reset
 {
     background-color: grey;
 }
-/* .check-inout-btn:hover
-{
-    background-color: var(--Checkin-hover);
-} */
+
 /* =====================Menu Items===================== */
 .menu_elements
 {
