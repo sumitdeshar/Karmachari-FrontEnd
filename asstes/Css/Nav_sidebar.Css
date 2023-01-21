@@ -9,6 +9,7 @@
     --dark-selected:hsl(0, 0%, 20%);
     --Checkin:hsl(120, 50%, 50%);
     --Checkin-hover:hsl(120, 50%, 30%);
+    --checkout:red;
 /* =====================TEXTS ======================*/
     --text-dark-color: #333;
     --text-dark-color-alt:grey;
@@ -420,3 +421,37 @@ p.time-data
 {
     background-color: var(--primary-color-alt);
 }
+
+
+
+/* HOME PAGE TESTING */
+/* ============================= Varibles ============================= */
+
+
+
+/* ============================= Global Styling ============================= */
+*
+{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins',sans-serif;
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: var(--text-color-black);
+}
+h3
+{
+    text-decoration: none;
+}
+
+
