@@ -216,8 +216,9 @@ li
     border-radius: 50%;
     border: .6px solid var(--text-light-color);
 }
-.clock
+.side-clock
 {
+    width: 100%;
     color: var(--text-light-color);
     font-weight: bold;
     font-size: 1.2rem;
@@ -325,7 +326,7 @@ p.time-data
     z-index: -1;
     top: 6.4%;
     left: 15%;
-    background: grey;
+    background: var(--text-light-color);
     width: max-content;
     width: 85%;
     height: 93.66%;
@@ -421,37 +422,4 @@ p.time-data
 {
     background-color: var(--primary-color-alt);
 }
-
-
-
-/* HOME PAGE TESTING */
-/* ============================= Varibles ============================= */
-
-
-
-/* ============================= Global Styling ============================= */
-*
-{
-    padding: 0;
-    margin: 0;
-    font-size: 1rem;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'poppins',sans-serif;
-}
-ul
-{
-    list-style: none;
-}
-a
-{
-    text-decoration: none;
-    color: var(--text-color-black);
-}
-h3
-{
-    text-decoration: none;
-}
-
 
