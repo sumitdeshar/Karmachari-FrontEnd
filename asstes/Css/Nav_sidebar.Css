@@ -241,9 +241,9 @@ p.time-data
 }
 .check-inout-btn
 {
-
+    width: 60%;
     color: var(--text-light-color);
-    padding: 10px 20px;
+    padding: 10px 0;
     font-weight: bold;
     border-radius: 8px;
     font-size: 1rem;
