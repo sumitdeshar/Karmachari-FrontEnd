@@ -111,4 +111,11 @@ document.addEventListener("click",function(event2)
 {
     if( event2.target.closest('.password-popup')||event2.target.closest('#password-popup')) return
     document.querySelector(".password-popup").classList.remove('active');
+});
+
+//=====================Loading =====================
+var loader = document.getElementById("loader-wrapper");
+window.addEventListener("load",function()
+{
+    loader.style.display="none";
 })
