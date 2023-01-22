@@ -167,10 +167,6 @@ li
 {
     background-color:var(--dark-color-alt) ;
 }
-.sub-item .arrow-icon
-{
-    /* transform: translateY(.3rem); */
-}
 .sub-item:hover .arrow-icon
 {
     color: var(--primary-color-alt);
@@ -316,7 +312,7 @@ p.time-data
 .active-menu a
 {
     color: var(--primary-color-alt);
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 
