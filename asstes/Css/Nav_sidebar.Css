@@ -2,14 +2,16 @@
 :root
 {
 /* ==================MAIN COLORS==================*/
-    --primary-color: hsl(230, 69%, 61%);
-    --primary-color-alt: hsl(240, 59%, 70%);
-    --dark-color:hsl(0, 0%, 20%);
+    --hue-color:250;/*Purple 250 - Green 142 - Blue 230 - Pink 340 sky blue: 205*/
+    --primary-color: hsl(var(--hue-color), 69%, 61%);
+    --primary-color-alt: hsl(var(--hue-color), 100%, 90%);
+    --primary-color-sec:  hsl(var(--hue-color), 69%, 61%);
+    --dark-color:#333;
     --dark-color-alt: hsl(0, 0%, 36%);
     --dark-selected:hsl(0, 0%, 20%);
     --Checkin:hsl(120, 50%, 50%);
     --Checkin-hover:hsl(120, 50%, 30%);
-    --checkout:red;
+    --checkout:hsl(0, 100%, 70%);
 /* =====================TEXTS ======================*/
     --text-dark-color: #333;
     --text-dark-color-alt:grey;
@@ -131,17 +133,13 @@ li
 {
     max-height: 50%;
 }
-.sub-menu ul
-{
-    text-align: left;
-}
 .sub-item-icon
 {
     margin-right: 1.5rem;
     background-color: var(--primary-color-alt);
     color: var(--text-dark-color);
     font-size: .9rem;
-    padding: .3rem;
+    padding: .25rem;
     border-radius: 50%;
 }
 .arrow-icon
@@ -254,7 +252,7 @@ p.time-data
 }
 .Check-out
 {
-    background-color: red;
+    background-color: var(--checkout);
 }
 .Check-in
 {
@@ -316,6 +314,7 @@ p.time-data
 .active-menu a
 {
     color: var(--primary-color-alt);
+    font-size: .9rem;
 }
 
 
