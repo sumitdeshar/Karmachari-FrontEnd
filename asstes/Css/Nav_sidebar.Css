@@ -405,13 +405,16 @@ p.time-data
 }
 .close-icon
 {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: .4rem;right: .7rem;
     padding: .2rem;
     /* background-color: var(--primary-color); */
     border-radius: 50%;
     width: 1.9rem;
+    height: 1.9rem;
     cursor: pointer;
     transition: .3s;
 }
