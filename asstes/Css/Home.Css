@@ -222,3 +222,10 @@ h3
 {
     background-color: grey;
 }
+@media screen and (max-width:900px)
+{
+    .grid-container
+    {
+        width:85%;
+    }
+}
