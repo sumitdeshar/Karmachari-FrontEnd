@@ -51,6 +51,7 @@ li
     list-style: none;
 }
 /* ===================== Nav_bar ===================== */
+
 .nav-bar
 {
     height: 6.5%;
@@ -59,9 +60,10 @@ li
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    z-index: 99;
+    /* z-index: 99; */
     background: var(--primary-color);
     padding: 0.1em  1em;
+    box-shadow: 2px 2px 5px 5px rgb(0, 0, 0,0.15);
 }
 .logo
 {
@@ -81,12 +83,12 @@ li
 .drop-down
 {  
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     padding: .2rem 0;
     cursor: pointer;
     border: 2px solid var(--primary-color-alt);
-    width: 13%;
+    width: 12%;
     transition: 0.3s;
 }
 .drop-down .avatar
@@ -128,6 +130,7 @@ li
     width: 17%;
     overflow: hidden;
     transition: .3s;
+    box-shadow: 2px 2px 5px 5px rgb(0, 0, 0,0.15);
 }
 .active-menu
 {
@@ -495,4 +498,11 @@ p.time-data
   100% {
     height: 0%;
   }
+}
+@media screen and (max-width:900px)
+{
+    .hero-section
+    {
+        background-color: red;
+    }
 }
