@@ -573,6 +573,7 @@ p.time-data {
         overflow: hidden;
         width: 60%;
         text-align: center;
+        transition: ease-in .3s;
     }
 
     .check-in-out {
