@@ -40,7 +40,7 @@ dropDown.addEventListener('click',(e) =>
     clockcheck.classList.toggle('active')
 })
 
-document.addEventListener("clibck",function(event)
+document.addEventListener("click",function(event)
 {
     if( event.target.closest('.drop-down')) return
     subMenu.classList.remove('sub-menu-active')
@@ -103,7 +103,6 @@ else
     }
 
 })
-// test
 //===================== Password Popup Section =====================
 document.querySelector("#password-popup").addEventListener("click",()=>
 {

@@ -54,7 +54,7 @@ li {
 
 /* ===============Navbar overall code ======*/
 .nav-bar {
-    height: 6.5%;
+    height: 7%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -76,7 +76,7 @@ li {
 }
 
 .logo_container {
-    width: 30%;
+    width: 40%;
     text-align: left;
     /* text-align: center; */
     transition: .3s;
@@ -546,7 +546,7 @@ p.time-data {
         left: -100%;
         z-index: 1;
         background-color: var(--dark-color);
-        width: 35%;
+        width: 60%;
         height: 100vh;
         transition: ease-in .3s;
 
@@ -571,7 +571,7 @@ p.time-data {
         right: 3%;
         height: 0%;
         overflow: hidden;
-        max-width: 30%;
+        width: 60%;
         text-align: center;
     }
 
@@ -586,7 +586,7 @@ p.time-data {
         top: 58%;
         z-index:2 ;
         background-color: var(--dark-selected);
-        width: 35%;
+        width: 60%;
         transition: ease-in .3s;
     }
     .sub-menu-wrap.active{
