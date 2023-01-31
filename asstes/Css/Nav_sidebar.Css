@@ -411,6 +411,7 @@ p.time-data {
         height: fit-content;
         border-bottom: .3rem solid #000;
         padding-bottom: .7rem;
+        transition: .3s;
     }
 
     .clock_section .avatar {
@@ -533,11 +534,16 @@ p.time-data {
         display: none;
     }
 
+    /*=================== Drop Down Check/Inout============*/
+    .clock_section.active {
+        height: 40%;
+    }
+
     /*=================== Sidebar============*/
     .side_bar {
         position: fixed;
         top: 6%;
-        left: 0%;
+        left: -100%;
         z-index: 1;
         background-color: var(--dark-color);
         width: 40%;
@@ -559,10 +565,9 @@ p.time-data {
         position: fixed;
         top: 8%;
         right: 3%;
-        height: 40%;
-        max-height: 0%;
+        height: 0%;
         overflow: hidden;
-        max-width: 45%;
+        max-width: 40%;
         text-align: center;
     }
 
@@ -573,7 +578,7 @@ p.time-data {
 
     .sub-menu-wrap {
         position: fixed;
-        left: 00%;
+        left: -100%;
         top: 58%;
         z-index:2 ;
         background-color: var(--dark-selected);
