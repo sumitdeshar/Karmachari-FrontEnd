@@ -128,9 +128,12 @@ window.addEventListener("load",function()
 
 
 // =======================Mobile Sidebar=============
+
+// =======================Icon change to close=======
 document.querySelector("#menu-open").addEventListener("click",()=>
 {
-    console.log("Hello")
+    document.querySelector("#side-icon").classList.toggle('fa-times')
     document.querySelector(".side_bar").classList.toggle("active");
     document.querySelector(".sub-menu-wrap").classList.toggle("active");
 });
+
