@@ -7,7 +7,7 @@
     --primary-color: hsl(var(--hue-color), 69%, 61%);
     --primary-color-alt: hsl(var(--hue-color), 100%, 90%);
     --primary-color-sec: hsl(var(--hue-color), 69%, 61%);
-    --dark-color: #333;
+    --dark-color: rgb(51, 51, 51);
     --dark-color-alt: hsl(0, 0%, 36%);
     --dark-selected: hsl(0, 0%, 20%);
     --Checkin: hsl(120, 50%, 50%);
@@ -546,10 +546,14 @@ p.time-data {
         left: -100%;
         z-index: 1;
         background-color: var(--dark-color);
-        width: 40%;
+        width: 35%;
         height: 100vh;
-    }
+        transition: ease-in .3s;
 
+    }
+    .side_bar.active{
+        left: 0%;
+    }
     .menu_elements {
         border-bottom: 1rem solid #000;
         padding: .3rem .1rem;
@@ -567,7 +571,7 @@ p.time-data {
         right: 3%;
         height: 0%;
         overflow: hidden;
-        max-width: 40%;
+        max-width: 30%;
         text-align: center;
     }
 
@@ -582,7 +586,11 @@ p.time-data {
         top: 58%;
         z-index:2 ;
         background-color: var(--dark-selected);
-        width: 40%;
+        width: 35%;
+        transition: ease-in .3s;
+    }
+    .sub-menu-wrap.active{
+        left: 0%;
     }
 
     .sub-item {

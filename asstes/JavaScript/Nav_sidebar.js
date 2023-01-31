@@ -40,7 +40,7 @@ dropDown.addEventListener('click',(e) =>
     clockcheck.classList.toggle('active')
 })
 
-document.addEventListener("click",function(event)
+document.addEventListener("clibck",function(event)
 {
     if( event.target.closest('.drop-down')) return
     subMenu.classList.remove('sub-menu-active')
@@ -126,3 +126,12 @@ window.addEventListener("load",function()
 {
     loader.style.display="none";
 })
+
+
+// =======================Mobile Sidebar=============
+document.querySelector("#menu-open").addEventListener("click",()=>
+{
+    console.log("Hello")
+    document.querySelector(".side_bar").classList.toggle("active");
+    document.querySelector(".sub-menu-wrap").classList.toggle("active");
+});
