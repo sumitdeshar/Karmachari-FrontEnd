@@ -169,7 +169,7 @@ p.time-data {
 }
 
 .menu_item {
-    padding: 1rem 1.5rem;
+    padding: 1rem 0 1rem 0;
     width: 100%;
     transition: .3s;
 }
@@ -517,6 +517,7 @@ p.time-data {
     .menu-open {
         color: var(--primary-color-alt);
         cursor: pointer;
+        width: 6%;
     }
 
     .drop-down {
@@ -554,11 +555,25 @@ p.time-data {
     .side_bar.active{
         left: 0%;
     }
-    .menu_elements {
-        border-bottom: 1rem solid #000;
-        padding: .3rem .1rem;
+    .menu_item
+    {
+        border-radius: 5px;
+        width: 100%;
+        padding-left: 1rem;
     }
-
+    .menu_elements {
+        margin-top: 20px;
+        border-bottom: 1rem solid rgb(31, 31, 31);
+        /* padding: .3rem .1rem; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu_elements ul
+    {
+        width: 90%;
+    }
     .clock_section {
         display: flex;
         flex-direction: column;
@@ -589,17 +604,20 @@ p.time-data {
         background-color: var(--dark-selected);
         width: 60%;
         transition: ease-in .3s;
+        display: flex;
+
     }
     .sub-menu-wrap.active{
         left: 0%;
     }
 
     .sub-item {
-        padding: 1rem 1.5rem;
+        padding: 1rem 0 1rem 1rem;
         text-align: left;
         width: 100%;
         color: white;
         transition: .3s;
+        background-color: red;
     }
 
     .sub-item:hover {
