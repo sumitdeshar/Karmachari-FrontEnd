@@ -118,6 +118,15 @@ document.addEventListener("click",function(event2)
     if( event2.target.closest('.password-popup')||event2.target.closest('#password-popup')) return
     document.querySelector(".password-popup").classList.remove('active');
 });
+document.addEventListener("click",function(event3)
+{
+    if( event3.target.closest('.menu-open')) return
+    {
+        document.querySelector(".side_bar").classList.remove('active');
+        document.querySelector(".sub-menu-wrap").classList.remove('active');
+        document.querySelector("#side-icon").classList.remove('fa-times');
+    }
+});
 
 //=====================Loading =====================
 var loader = document.getElementById("loader-wrapper");
