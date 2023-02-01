@@ -588,7 +588,7 @@ p.time-data {
         overflow: hidden;
         width: 60%;
         text-align: center;
-        transition: ease-in .3s;
+        transition: .2s;
     }
 
     .check-in-out {
@@ -622,6 +622,8 @@ p.time-data {
         width: 100%;
         color: white;
         transition: .3s;
+        display: flex;
+        align-items: center;
 
     }
 
