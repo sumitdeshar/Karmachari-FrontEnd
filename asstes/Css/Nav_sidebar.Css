@@ -166,6 +166,7 @@ p.time-data {
 /* =================Menu Items============== */
 .menu_elements {
     background: var(--dark-selected);
+
 }
 
 .menu_item {
@@ -416,6 +417,10 @@ p.time-data {
 
     .clock_section .avatar {
         margin: .3rem auto .6rem;
+    }
+    .menu_item
+    {
+        padding-left:.8rem;
     }
 
     /* =====================Hero Section===================== */
