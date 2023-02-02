@@ -393,7 +393,7 @@ p.time-data {
     }
 
     .sub-menu-active {
-        max-height: 50%;
+        max-height: 40%;
     }
 
     /* ===================== Sidebar ===================== */
@@ -416,7 +416,8 @@ p.time-data {
     }
 
     .clock_section .avatar {
-        margin: .3rem auto .6rem;
+        /* margin: .3rem auto .6rem; */
+        transform:translateY(10%)
     }
     .menu_item
     {
