@@ -170,7 +170,7 @@ p.time-data {
 }
 
 .menu_item {
-    padding: 1rem 0 1rem 0;
+    padding: .8rem 0 .8rem 0;
     width: 100%;
     transition: .3s;
 }
@@ -523,6 +523,7 @@ p.time-data {
         color: var(--primary-color-alt);
         cursor: pointer;
         width: 6%;
+        transition:.3s;
     }
 
     .drop-down {
@@ -565,6 +566,7 @@ p.time-data {
         border-radius: 5px;
         width: 100%;
         padding-left: 1rem;
+        margin-bottom: .3rem;
     }
     .menu_elements {
         margin-top: 20px;
