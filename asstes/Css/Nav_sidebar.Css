@@ -2,9 +2,10 @@
 
 :root {
     /* ==================MAIN COLORS==================*/
-    --hue-color: 250;
+    --hue-color: 207;
+    /* --color-mer:hsl(207, 75%, 50%); */
     /*Purple 250 - Green 142 - Blue 230 - Pink 340 sky blue: 205*/
-    --primary-color: hsl(var(--hue-color), 69%, 61%);
+    --primary-color: hsl(var(--hue-color), 75%, 50%);
     --primary-color-alt: hsl(var(--hue-color), 100%, 90%);
     --primary-color-sec: hsl(var(--hue-color), 69%, 61%);
     --dark-color: rgb(51, 51, 51);
