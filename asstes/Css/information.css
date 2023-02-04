@@ -1,4 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 /* =============================== Variables =========================== */
+:root {
+    /* ==================MAIN COLORS==================*/
+    --hue-color: 250;
+    /*Purple 250 - Green 142 - Blue 230 - Pink 340 sky blue: 205*/
+    --primary-color: hsl(var(--hue-color), 69%, 61%);
+    --primary-color-alt: hsl(var(--hue-color), 100%, 90%);
+    --primary-color-sec: hsl(var(--hue-color), 69%, 20%);
+    --dark-color: rgb(51, 51, 51);
+    --dark-color-alt: hsl(0, 0%, 36%);
+    --dark-selected: hsl(0, 0%, 20%);
+    --Checkin: hsl(120, 50%, 50%);
+    --Checkin-hover: hsl(120, 50%, 30%);
+    --checkout: hsl(0, 100%, 70%);
+    /* =====================TEXTS ======================*/
+    --text-dark-color: #333;
+    --text-dark-color-alt: grey;
+    --text-light-color: whitesmoke;
+}
 
 /* ============================== GOlbal styling ======================= */
 * {
@@ -7,36 +27,100 @@
     box-sizing: border-box;
     /* overflow: hidden; */
     /* font-size: 1rem; */
+    font-family: 'poppins', sans-serif;
 }
 
 body {
-    font-family: 'poppins', sans-serif;
     margin: 0rem;
+    min-height: 100vh;
+    /* background-color: black; */
 }
 
 .hero-content {
+    z-index: -2;
     height: 100%;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: var(--primary-color-sec);
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* ============================== BG aimation ======================= */
+.bg-animation
+{
+    /* opacity: 1; */
+    position: absolute;
+    z-index: -1;
+    width: 100%;  
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles
+{
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    display: flex;
+}
+.bubbles span
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background:#4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(195s/var(--i)) ;
+}
+.bubbles span:nth-child(even)
+{
+    background:#ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544, 
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75; 
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    1000%
+    {
+        transform: translateY(-100vh) scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+/* ============================== CSS starts ======================= */
+
 .hero {
     width: 95%;
     height: 95%;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: grey;
+    background-color: rgb(0, 0, 0,0.2);
 }
 .Title-text
 {
-    color: black;
+    color: var(--text-dark-color);
     font-weight: bold;
-    padding: 1rem 0 1rem .9rem;
+    padding: 1rem 0 1rem 5%;
     font-size: 1.2rem;
+    color: var(--text-light-color);
     /* background-color: yellow; */
 }
 
@@ -54,8 +138,8 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border-radius: 1.2rem;
-    background-color: rgb(154, 163, 160);
+    border-radius: 5px;
+    background-color: var(--primary-color-alt);
 }
 
 .user-head {
@@ -63,28 +147,28 @@ body {
     width: 100%;
     font-weight: bold;
     font-size: 1.25rem;
-    color: #fff;
+    color: var(--text-dark-color);
     /* color: rgb(207, 224, 218); */
     text-align: center;
     /* background-color: rgb(231, 176, 105); */
 }
 
 .user-image-info {
-    height: 47%;
-    width: 85%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 60%;
     text-align: center;
-    background-color: rgb(207, 224, 218);
+    background-color: var(--primary-color-alt);
 }
 
 .user-image {
+    border-radius: 50%;
+    border:.3rem solid white;
     height: 100%;
     width: 100%;
-    color: rgb(207, 224, 218);
+    color: var(--primary-color-alt);
 }
 
 .user-bottom {
@@ -92,7 +176,7 @@ body {
     padding-top: 2%;
     width: 100%;
     text-align: center;
-    color: #fff;
+    color:  var(--text-dark-color);
     /* color: rgb(192, 228, 216); */
     /* background-color: rgb(207, 224, 218); */
 }
@@ -114,8 +198,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     text-align: left; */
-    font-weight: bold;
-
+    /* font-weight: bold; */
 }
 
 .user-details-top1 {
@@ -170,11 +253,12 @@ body {
 .master-side {
     height: 80%;
     width: 60%;
-    background-color: rgb(207, 224, 218);
-    border-radius: 0.8rem;
+    background-color: var(--primary-color-alt);
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 1.5%;
 }
 
 .master-head {
@@ -186,8 +270,8 @@ body {
     /* padding-top: 3%; */
     font-size: 1.32rem;
     font-weight: bold;
-    color: rgb(207, 224, 218);
-    background-color: rgb(154, 163, 160);
+    color: var(--text-light-color);
+    background-color:var(--primary-color);
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
 }
@@ -210,6 +294,8 @@ body {
 .Details-name {
     font: 1.2rem;
     font-weight: bold;
+    color: var(--text-dark-color-alt);
+    padding: 0 0 1% 1%;
 }
 
 .inputbox div{
@@ -218,13 +304,12 @@ body {
     padding: 0 0 0 1%;
     font-size: 1rem;
     font-weight: bold;
-    color: rgb(230, 248, 242);
-    background-color: rgb(154, 163, 160);
+    color: var(--text-dark-color);
+    background-color: var(--text-light-color);
     border-radius: 5px;
     display: flex;
     justify-content: left;
     align-items: center;
-
 }
 
 .name2 {
