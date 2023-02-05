@@ -4,6 +4,7 @@
     padding: 0rem;
     margin: 0rem;
     border-radius: 0rem;
+    font-family: 'poppins',sans-serif;
 }
 
 .container {
@@ -89,13 +90,9 @@ select {
 }
 
 .content-table th,
-.content-table td {
-    
+.content-table td { 
     padding: 12px 15px;
     font-size: 1.25rem;
-    
-    /* font-weight: bold; */
-
 }
 
 .content-table tbody tr {
