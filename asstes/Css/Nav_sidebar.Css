@@ -272,13 +272,13 @@ p.time-data {
     margin-top: 1.6rem;
 }
 
-.question {
+.question_pw {
     font-size: .9rem;
     margin-top: .8rem;
     outline: none;
 }
 
-.Answer {
+.Answer_pw {
     border-radius: 5px;
     width: 100%;
     padding: .3rem;
@@ -376,7 +376,7 @@ p.time-data {
         opacity: .9;
         max-height: 0%;
         border-radius: 5px;
-        width: 17%;
+        width: 15%;
         overflow: hidden;
         transition: .3s;
         /* box-shadow: 2px 2px 5px 5px rgb(0, 0, 0, 0.15); */

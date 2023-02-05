@@ -262,16 +262,6 @@ body {
     justify-content: space-evenly;
 }
 
-.dep {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
 @media only screen and (max-width:900px) {
     .hero-content
     {
@@ -297,10 +287,6 @@ body {
 @media only screen and (max-width:400px){
     .user-details {
         height: 40%;
-        /* grid-template-columns:  1fr; */
-        /* grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr;
-        text-align: left; */
         font-size: 0.77rem;
 
         display: flex;
