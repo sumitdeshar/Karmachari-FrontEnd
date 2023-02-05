@@ -37,7 +37,6 @@ body {
 }
 
 .hero-content {
-    z-index: -2;
     height: 100vh;
     width: 100%;
     background:var(--text-light-color);
@@ -263,36 +262,31 @@ body {
 }
 
 @media only screen and (max-width:900px) {
+    .hero
+    {
+        margin-bottom: 6px;
+    }
     .hero-content
     {
         height: fit-content;
+        width: 100%;
+        left: 0;
     }
-    .your{
+    .information_section
+    {
         flex-direction: column;
-        /* background-color: red; */
-        height: fit-content;
+        justify-content: space-around;
     }
-    .user-info
+    .User-basic-information
     {
         height: 500px;
-        width: 80%;
+        width: 85%;
+        margin-bottom: 40px;
     }
-    .master-side
+    .master-section
     {
         height: 400px;
-        width: 80%;
+        width: 85%;
+        margin-bottom: 20px;
     }
-}
-
-@media only screen and (max-width:400px){
-    .user-details {
-        height: 40%;
-        font-size: 0.77rem;
-
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
 }
