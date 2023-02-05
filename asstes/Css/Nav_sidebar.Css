@@ -88,7 +88,7 @@ li {
     align-items: center;
     height: 90%;
     cursor: pointer;
-    border: 2px solid var(--primary-color-alt);
+    /* border: 2px solid var(--primary-color-alt); */
     width: 12%;
     transition: 0.3s;
 }
@@ -426,7 +426,7 @@ p.time-data {
         position: absolute;
         top: 6.4%;
         left: 0;
-        width: 17%;
+        width: 15%;
         height: 93.666%;
     }
 
@@ -452,7 +452,7 @@ p.time-data {
     .hero-section {
         position: absolute;
         z-index: -1;
-        top: 6.4%;
+        top: 7%;
         left: 15%;
         background: var(--text-light-color);
         width: max-content;
