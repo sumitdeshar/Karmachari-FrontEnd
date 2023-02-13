@@ -421,8 +421,6 @@ h3 {
 }
 
 .content {
-    /* width: 78%;
-    height: 20%; */
     background-color: var(--text-light-color);
     display: flex;
     flex-direction: column;

@@ -80,7 +80,6 @@ li {
 .logo_container {
     width: 40%;
     text-align: left;
-    /* text-align: center; */
     transition: .3s;
 }
 
@@ -223,7 +222,6 @@ p.time-data {
     font-size: .55rem;
     content: attr(current-count);
     width: 40%;
-    /* height: 20%; */
     display: flex;
     color: whitesmoke;
     justify-content: center;
@@ -576,13 +574,11 @@ p.time-data {
     .Name {
         display: none;
     }
-
     /*=================== Drop Down Check/Inout============*/
     .clock_section.active {
         height: 40%;
     }
     .clock_section.active .avatar{
-        /* margin-top: .3rem; */
         height: 100px;
     }
     .check-inout-btn
@@ -614,7 +610,6 @@ p.time-data {
     .menu_elements {
         margin-top: 20px;
         border-bottom: 1rem solid rgb(31, 31, 31);
-        /* padding: .3rem .1rem; */
         width: 100%;
         display: flex;
         justify-content: center;
@@ -686,7 +681,6 @@ p.time-data {
     .sub-item a {
         color: whitesmoke;
         transition: .3s;
-        /* font-size: .3rem; */
     }
 
     .sub-item:hover a {
@@ -708,7 +702,6 @@ p.time-data {
         top: 6.5%;
         left: 0%;
         background-color:var(--text-light-color);
-        /* background: var(--text-light-color); */
         width: max-content;
         width: 100%;
         height: 100vh;
