@@ -563,7 +563,7 @@ p.time-data {
     }
 
     .drop-down {
-        width: 40px;
+        width: 44px;
         border: none;
     }
 
@@ -579,11 +579,11 @@ p.time-data {
 
     /*=================== Drop Down Check/Inout============*/
     .clock_section.active {
-        height: 45%;
+        height: 40%;
     }
     .clock_section.active .avatar{
-        margin-top: .3rem;
-        height: 130px;
+        /* margin-top: .3rem; */
+        height: 100px;
     }
     .check-inout-btn
     {
