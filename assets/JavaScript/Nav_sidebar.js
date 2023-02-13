@@ -108,7 +108,7 @@ document.querySelector("#password-popup").addEventListener("click",()=>
 {
     document.querySelector(".password-popup").classList.add("active");
 });
-document.querySelector(".close-icon").addEventListener("click",()=>
+document.querySelector(".close-icon_pw").addEventListener("click",()=>
 {
     document.querySelector(".password-popup").classList.remove("active");
 });
