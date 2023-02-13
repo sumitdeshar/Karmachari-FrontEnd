@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/Css/Home.Css">
+    <!-- <link rel="stylesheet" href="{%static 'assets/css/Home.Css'%}"> -->
 </head>
-
 <body>
+    {% include 'Nav_Sidebar.html' %}
     <div class="container hero-section">
         <div class="grid-container">
             <div class="item right">
@@ -98,6 +100,7 @@
         </div>
     </div>
     <script src="assets/javaScript/Home.js"></script>
+    <!-- <script src="{%static 'assets/js/Home.js'%}"></script> -->
 </body>
 
 </html>
