@@ -24,6 +24,11 @@
             <input type="Submit" id="Login_Btn" value="Login"/><br>
             <a href="Home.html" id="forgot_pw">Forgot Password?</a>
         </form>
+        {% for message in messages %}
+        <div class="message-container-pw">
+            <h3 id="Error-Message">{{message}}</h3>
+        </div>
+        {% endfor %}
     </div>
     <script src="assets/JavaScript/Nav_sidebar.js"></script>
 </body>
