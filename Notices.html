@@ -10,24 +10,24 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="top-nav">
             <h2>NOTICES</h2>
         </div>
-        <hr class="horizontal-line">
         <main>
+            <hr class="horizontal-line">
             <p>
             <div class="view-notice">View Notice</div>
             </p>
             <div class="main-notice">
                 <div class="main-header">
-                    <p>Show</p>
-                    <select class="option-notice">
+                    <p class="main-text">Show</p>
+                    <select class="main-text-middle">
                         <option value="notice">2</option>
                         <option value="notice">5</option>
                         <option value="notice">10</option>
                     </select>
-                    <p>entries</p>
+                    <p class="main-text-right">entries</p>
                 </div>
                 <input class="main-bottom" type="text" name="search" placeholder="search">
             </div>
@@ -41,30 +41,27 @@
                         <th>Department</th>
                         <th>description</th>
                     </tr>
-                </thead>
 
+                </thead> 
+                
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Notice 1</td>
-                        <td>2023/02/05</td>
-                        <td>computer</td>
-                        <td>This is a testing</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Notice 2</td>
-                        <td>2023/02/10</td>
-                        <td>computer</td>
-                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nesciunt modi, itaque
-                            veritatis consectetur quo aspernatur corrupti expedita iusto numquam eos deserunt aut id
-                            nisi. Repellendus eos similique explicabo tempore.
-                            Similique nobis eligendi dolor deserunt repellendus. Optio tempore possimus expedita minus
-                            blanditiis consequuntur maiores culpa beatae. Autem, at pariatur eum sed doloremque
-                            reiciendis enim fugit! Exercitationem eaque minus amet maiores.</td>
-                    </tr>
-                    <tr></tr>
-                </tbody>
+                    <optgroup>
+                        <tr>
+                            <td>1</td>
+                            <td>Notice 1</td>
+                            <td>2023/02/05</td>
+                            <td>computer</td>
+                            <td>This is a testing. </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Notice 2</td>
+                            <td>2023/02/10</td>
+                            <td>computer</td>
+                            <!-- <td>mathematics, the science of structure, order, and relation that has evolved from elemental practices of counting, measuring, and describing the shapes of objects. It deals with logical reasoning and quantitative calculation, and its development has involved an increasing.This is a testing mathematics, the science of structure, order, and relation that has evolved from elemental practices of counting, measuring, and describing the shapes of objects. It deals with logical reasoning and quantitative calculation, and its development has involved an increasing degree of idealization and abstraction of its subject matter.This is a testing mathematics, the science of structure, order, and relation that has evolved from elemental practices of counting, measuring, and describing the shapes of objects. It deals with logical reasoning and quantitative calculation, and its development has involved an increasing degree of idealization and abstraction of its subject matter.</td> -->
+                        </tr>
+                    </optgroup>
+                </tbody>    
             </table>
         </main>
     </div>
