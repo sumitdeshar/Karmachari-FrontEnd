@@ -1,0 +1,30 @@
+body
+{
+    background: #eee;
+}
+#side_nav
+{
+    background-color: #000;
+    min-width: 250px;
+    max-width: 250px;
+}
+.content
+{
+    min-height: 100vh;
+    width: 100%;
+}
+h-color
+{
+    background: #eee;
+}
+.sidebar li.active
+{
+    background-color: #eee;
+    border-radius: 8px;
+}
+.sidebar li.active a{
+    color: #000;
+}
+.sidebar li a{
+    color: whitesmoke;
+}
