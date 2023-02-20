@@ -1,9 +1,26 @@
-$(".sidebar ul li").on('click',function()
+$(".menu-item").on('click',function()
 {
-    console.log("hello");
-    $(".sidebar ul li.active").removeClass('active');
+    $(".menu-item.active").removeClass('active');
     $(this).addClass('active')
 })
+
+$(".sub-item").on('click',function()
+{
+    $(".sub-item.active").removeClass('active');
+    $(this).addClass('active')
+})
+
+$(".item-salary").on('click',function()
+{
+    $('.sub-item-salary').toggleClass('show')
+})
+$(".item-employee").on('click',function()
+{
+    $('.sub-item-employee').toggleClass('show')
+})
+
+
+
 $('.open-btn').on('click',function(){
     $('.sidebar').addClass('active')
 })
