@@ -1,70 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/Css/Notices.css">
-    <title>Notices</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/Css/Notices.css">
+        <title>Notices</title>
+    </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="top-nav">
-            <h2>NOTICES</h2>
-        </div>
-        <main>
-            <hr class="horizontal-line">
-            <p>
-            <div class="view-notice">View Notice</div>
-            </p>
-            <div class="main-notice">
-                <div class="main-header">
-                    <p class="main-text">Show</p>
-                    <select class="main-text-middle">
-                        <option value="notice">2</option>
-                        <option value="notice">5</option>
-                        <option value="notice">10</option>
-                    </select>
-                    <p class="main-text-right">entries</p>
-                </div>
-                <input class="main-bottom" type="text" name="search" placeholder="search">
+    <body>
+        <div class="container-fluid">
+            <div class="top-nav">
+                <h2>NOTICES</h2>
             </div>
-            <table class="content-table">
-                <thead>
+            <main>
+                <hr class="horizontal-line">
+                <p>
+                <div class="view-notice">View Notice</div>
+                </p>
+                <div class="main-notice">
+                    <div class="main-header">
+                        <p class="main-text">Show</p>
+                        <select class="main-text-middle">
+                            <option value="notice">2</option>
+                            <option value="notice">5</option>
+                            <option value="notice">10</option>
+                        </select>
+                        <p class="main-text">entries</p>
+                    </div>
+                </div>
+                <div class="table-holder">
+                    <table class="content-table">
+                        <thead>
 
-                    <tr>
-                        <th>SN</th>
-                        <th>Title</th>
-                        <th>Published Date</th>
-                        <th>Department</th>
-                        <th>description</th>
-                    </tr>
+                            <tr>
+                                <th class="SN">SN</th>
+                                <th class="Notice_title">Title</th>
+                                <th class="Notice_date">Published Date</th>
+                                <th class="Notice_department">Department</th>
+                                <th class="Notice_Bio">Description</th>
+                            </tr>
 
-                </thead> 
-                
-                <tbody>
-                    <optgroup>
-                        <tr>
-                            <td>1</td>
-                            <td>Notice 1</td>
-                            <td>2023/02/05</td>
-                            <td>computer</td>
-                            <td>This is a testing. </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Notice 2</td>
-                            <td>2023/02/10</td>
-                            <td>computer</td>
-                            <td>mathematics, the science of structure, order, and relation that has evolved from elemental practices of counting, measuring, and describing the shapes of objects. It deals with logical reasoning and quantitative calculation, and its development has involved an increasing.This is a testing mathematics, the science of structure, order, and relation that has evolved from elemental practices of counting, measuring, and describing the shapes of objects. It deals with logical reasoning and quantitative calculation, and its development has involved an increasing degree of idealization and abstraction of its subject matter.</td>
-                        </tr>
-                    </optgroup>
-                </tbody>    
-            </table>
-        </main>
-    </div>
-</body>
+                        </thead>
+
+                        <tbody>
+                            <optgroup>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="Notice_title">Notice 1</td>
+                                    <td>2023/02/05</td>
+                                    <td>Computer</td>
+                                    <td class="Notice_Bio">This is a testing. </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="Notice_title">Notice 2</td>
+                                    <td>2023/02/10</td>
+                                    <td>Computer</td>
+                                    <td class="Notice_Bio">mathematics, the science of structure, order, and relation that has evolved from
+                                        elemental practices of counting, measuring, and describing the shapes of
+                                        objects. It deals with logical reasoning and quantitative calculation, and its
+                                        development has involved an increasing.This is a testing mathematics, the
+                                        science of structure, order, and relation that has evolved from elemental
+                                        practices of counting, measuring, and describing the shapes of objects. It deals
+                                        with logical reasoning and quantitative calculation, and its development has
+                                        involved an increasing degree of idealization and abstraction of its subject
+                                        matter.</td>
+                                </tr>
+                            </optgroup>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </body>
 
 </html>
