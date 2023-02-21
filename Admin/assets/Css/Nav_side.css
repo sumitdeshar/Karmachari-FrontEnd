@@ -75,6 +75,7 @@ h-color
     padding: 3px 0;
     border-radius: 8px;
     border: 2px solid transparent;
+    transition: .3s;
 }
 .sub-item a{
     color: #eee;
@@ -85,12 +86,19 @@ h-color
 }
 .sub-item-salary
 {
-    display: none;
+    height: 0px;
+    overflow: hidden;
 }
 .sub-item-employee
 {
-    display: none;
+    height: 0px;
+    overflow: hidden;
+}
+.sub-item-department
+{
+    height: 0px;
+    overflow: hidden;
 }
 .show{
-    display: block;
+    height: fit-content;
 }

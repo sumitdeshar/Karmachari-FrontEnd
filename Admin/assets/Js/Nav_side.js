@@ -7,7 +7,7 @@ $(".menu-item").on('click',function()
 $(".sub-item").on('click',function()
 {
     $(".sub-item.active").removeClass('active');
-    $(this).addClass('active')
+    $(this).toggleClass('active')
 })
 
 $(".item-salary").on('click',function()
@@ -17,6 +17,10 @@ $(".item-salary").on('click',function()
 $(".item-employee").on('click',function()
 {
     $('.sub-item-employee').toggleClass('show')
+})
+$(".item-department").on('click',function()
+{
+    $('.sub-item-department').toggleClass('show')
 })
 
 

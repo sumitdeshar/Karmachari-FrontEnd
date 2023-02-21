@@ -12,17 +12,29 @@
 </head>
 
 <body>
+    <!-- =============================Sidebar============================ -->
     <div class="sidebar" id="side_nav">
+
+        <!-- =============================Title section============================ -->
         <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
             <h1 class="fs-4"><img src="assets/Img/Logo.jpg" alt="Logo" class="logo"><span
                     class="text-white ml-2">Karmachari App</span></h1>
             <button class="btn d-md-none close-btn px-1 py-0 text-white"><i class="bi bi-list"></i></button>
         </div>
+
+
+        <!-- =============================List/Menu item============================ -->
+
         <ul class="list-unstyled px-2">
-            <li  class="menu-item"><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
+
+            <li class="menu-item"><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
                         class="bi bi-house-door menu-icon"></i>Dashboard</a></li>
-            <li class="menu-item"><a href="#" class="item-employee text-decoration-none px-3 py-2 dropdown-toggle d-block"><i
+
+            <li class="menu-item"><a href="#"
+                    class="item-employee text-decoration-none px-3 py-2 dropdown-toggle d-block"><i
                         class="bi bi-person-badge-fill menu-icon"></i>Employee</a></li>
+            <!-- =============================Subitem for employee============================ -->
+
             <div class="sub-item-employee">
                 <ul class="list-unstyled px-4">
                     <li class="sub-item"><a href="#" class="text-decoration-none px-1"><i
@@ -32,9 +44,13 @@
                     </li>
                 </ul>
             </div>
-            <li class="menu-item"><a href="#" class="item-salary text-decoration-none dropdown-toggle px-3 py-2 d-block"><i
+
+            <li class="menu-item"><a href="#"
+                    class="item-salary text-decoration-none dropdown-toggle px-3 py-2 d-block"><i
                         class="bi bi-cash-coin menu-icon"></i>Salary Sheet</a></li>
-            <div class="sub-item-salary">
+
+            <!-- =============================Subitem for salary============================ -->
+            <div class="sub-item-salary" id="sub-item-salary">
                 <ul class="list-unstyled px-4">
                     <li class="sub-item active"><a href="#" class="text-decoration-none px-1"><i
                                 class="bi bi-person me-2"></i>Overall</a></li>
@@ -43,24 +59,39 @@
                     </li>
                 </ul>
             </div>
+
+            <li class="menu-item"><a href="#" class="item-department text-decoration-none dropdown-toggle px-3 py-2 d-block">
+                    <i class="bi bi-people menu-icon"></i>Department</a></li>
+            <!-- =============================Subitem for Department============================ -->
+            <div class="sub-item-department" id="sub-item-salary">
+                <ul class="list-unstyled px-4">
+                    <li class="sub-item active"><a href="#" class="text-decoration-none px-1"><i
+                                class="bi bi-person me-2"></i>Add Department</a></li>
+                    <li class="sub-item"><a href="#" class="text-decoration-none px-1"><i
+                                class="bi bi-person-add me-2"></i>Manage Department</a>
+                    </li>
+                </ul>
+            </div>
+
             <li class="menu-item">
                 <a href="#" class="text-decoration-none px-3 py-2 d-block d-flex justify-content-between">
                     <span><i class="bi bi-door-open menu-icon"></i>Leaves</span>
                     <span class="rounded-pill bg-dark text-light px-2 py-0 ">02</span>
                 </a>
             </li>
+
             <li class="menu-item"><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
                         class="bi bi-bell-fill menu-icon"></i>Notices</a></li>
         </ul>
+    <!-- =============================line============================ -->
 
         <hr class="h-color text-white mx-3">
+    <!-- =============================Menu item 2============================ -->
 
-        <ul class="list-unstyled">
-            <li><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
+        <ul class="list-unstyled px-2">
+            <li class="menu-item"><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
                         class="bi bi-gear menu-icon"></i>Settings</a></li>
-            <li><a href="#" class="text-decoration-none px-3 py-2 d-block"><i class="bi bi-key menu-icon"></i>Change
-                    Password</a></li>
-            <li><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
+            <li class="menu-item"><a href="#" class="text-decoration-none px-3 py-2 d-block"><i
                         class="bi bi-box-arrow-right menu-icon"></i>Logout</a></li>
         </ul>
     </div>
