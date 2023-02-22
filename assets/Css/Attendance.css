@@ -1,10 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    /* ==================MAIN COLORS==================*/
+    --hue-color: 207;
+    /* --color-mer:hsl(207, 75%, 50%); */
+    /*Purple 250 - Green 142 - Blue 230 - Pink 340 sky blue: 205*/
+    --primary-color: hsl(var(--hue-color), 75%, 50%);
+    --primary-color-alt: hsl(var(--hue-color), 100%, 90%);
+    --primary-color-sec: hsl(var(--hue-color), 69%, 61%);
+    --dark-color: rgb(51, 51, 51);
+    --dark-color-alt: hsl(0, 0%, 36%);
+    --dark-selected: hsl(0, 0%, 20%);
+    --Checkin: hsl(120, 50%, 50%);
+    --Checkin-hover: hsl(120, 50%, 30%);
+    --checkout: hsl(0, 100%, 70%);
+    /* =====================TEXTS ======================*/
+    --text-dark-color: #333;
+    --text-dark-color-alt: grey;
+    --text-light-color: whitesmoke;
+}
 *
 {
     box-sizing: border-box;
+    font-family: "poppins",sans-serif;
 }
 body
 {
     height: calc(100vh-3px);
+    font-weight: 100;
 }
 main {
       padding: 48px;
@@ -51,11 +74,6 @@ main {
       --red: #ED5454;
   }
 
-  body {
-      font-family: Montserrat;
-      font-weight: 100;
-      color: #A8B2B9;
-  }
 
   sidebar {
       background-color: white;
@@ -63,63 +81,16 @@ main {
   }
 
   main {
-      background-color: #FCFBFC;
+      background-color: whitesmoke
   }
-
-  .avatar__name {
-      font-size: 0.8rem;
-  }
-
-  .menu__item {
-      text-transform: uppercase;
-      font-size: 0.7rem;
-      font-weight: 500;
-      padding: 16px 16px 16px 14px;
-      border-left: 4px solid transparent;
-      color: inherit;
-      text-decoration: none;
-      transition: color ease 0.3s;
-  }
-
-  .menu__item--active .menu__icon {
-      color: var(--red);
-  }
-
-  .menu__item--active .menu__text {
-      color: black;
-  }
-
-  .menu__item:hover {
-      color: black;
-  }
-
-
-  .menu__icon {
-      font-size: 1.3rem;
-  }
-
-  @media screen and (min-width: 850px) {
-      .menu__icon {
-          font-size: 0.9rem;
-          padding-right: 16px;
-      }
-
-      .menu__item--active {
-          border-left: 4px solid var(--red);
-          box-shadow: inset 10px 0px 17px -13px var(--red);
-      }
-  }
-
-  .copyright {
-      font-size: 0.7rem;
-      font-weight: 400;
-  }
-
   .calendar {
       background-color: white;
       border: 1px solid #e1e1e1;
   }
-
+  .calendar__header
+  {
+    color: var(--primary-color);
+  }
   .calendar__header>div {
       text-transform: uppercase;
       font-size: 0.8em;
@@ -168,4 +139,28 @@ main {
       color: var(--red);
       font-weight: 500;
       box-shadow: 1px 2px 30px -5px var(--red);
+  }
+  .schedule-time
+  {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    font-size: .75rem;
+    /* height: 40%; */
+    width: 25%;
+  }
+  .question_atten
+  {
+    font-weight: bold;
+  }
+  .current-month
+  {
+    /* background-color: red; */
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .arrow-icon
+  {
+    cursor: pointer;
   }
