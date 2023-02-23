@@ -201,3 +201,68 @@ main {
     margin-right: .5rem;
     color: var(--primary-color);
 }
+/* =================Mobile View=========== */
+@media screen and (max-width:900px)
+{
+    *
+    {
+        overflow: hidden;
+        font-size: .9rem;
+    }
+    main
+    {
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+    .toolbar
+    {
+        width: 98%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .toggle
+    {
+        display: none;
+        width: 20%;
+    }
+    .toggle__option
+    {
+        width: 100%;
+    }
+    .current-month
+    {
+        width: 40%;
+        justify-self: center;
+    }
+    .schedule-time
+    {
+        position: absolute;
+        right: 2%;
+        align-self: flex-end;
+        width: 35%;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+    .question_atten
+    {
+        display: none;
+        font-size: .6rem;
+    }
+    .answer_atten
+    {
+        font-size: .7rem;
+    }
+    .calendar
+    {
+        height: 65%;
+    }
+    .atten-status
+    {
+        color: transparent;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+}
