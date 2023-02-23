@@ -219,29 +219,18 @@ a:hover {
     border-radius: 50%;
 }
 
+
 @media screen and (max-width:900px) {
-    .content-table th,
-    .content-table tr {
-
-        padding: 20px 3px;
-        font-size: 1rem;
-        text-align: left;
+    *
+    {
+        box-sizing: border-box;
     }
-
-    .content-table td {
-        padding: 15px 4px;
-        font-size: 1.14rem;
-        text-align: left;
-    }
-    
-    
-}
-
-
-@media screen and (max-width:650px) {
-    .container{
+    body {
         width: 100%;
-        height: 100%;
+    }
+
+    .container {
+        width: 100%;
         left: 0;
     }
 
@@ -254,90 +243,84 @@ a:hover {
     }
 
     .top-nav h2 {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         font-weight: bold;
-        margin-left: 2%;
     }
 
     main {
         width: 100%;
         height: fit-content;
-        margin-left:0;
     }
-
-    .view-notice {
-        font-size: 1.1rem;
-        text-align: center;
-        height: 2.5rem;
-        width: 100%;
+    .view-notice
+    {
+        font-size: 1rem;
+    }
+    .main-text
+    {
+        font-size: .9rem;
+    }
+    .Notice_title
+    {
+        width: 20%;
+    }
+    .Notice_date
+    {
+        width: 30%;
+    }
+    .Notice_Bio
+    {
+        display: none;
+    }
+    .content-table tr,
+    .content-table th
+    {
+        font-size: .7rem;
+        font-weight: normal;
+        padding: .25rem;
+    }
+    .list-icon
+    {
         margin: 0;
-        padding-top: 1.5%;
+    }
+    .view-notice {
+        font-size: 1rem;
+        margin: 2% 0 2% 0;  
+        width: 97%;
+        /* background-color: blue; */
+
     }
 
     .main-header {
         flex-grow: 1;
-        /* background-color: red; */
-        font-size: 0.9rem;
-
+        /* font-size: 0.8rem; */
     }
 
-    .main-text {
-        width: 15%;
-        margin-left: 1%;
-        /* background-color: red; */
-    }
-    
     .main-text-right {
-        /* background-color: red; */
-        text-align: center;
-        width: 18%;
+        font-size: 0.9rem;
     }
-    
+
     .main-text-middle {
-        background-color: antiquewhite;
-        width: 15%;
-        font-size: 0.95rem;
+        /* width: 10%; */
+        font-size: .9rem;
     }
-    
+
+
     .main-bottom {
-        width: 25%;
-        margin-right: 2%;
-        text-align: center;
-        font-size: 0.95rem;
-        background-color: antiquewhite;
+        width: 40%;
+        font-size: 0.9rem;
     }
 
-    .content-table tr,
-    .content-table th
+    .content-table {
+        height: fit-content;
+    }
+    .main-notice
     {
-        padding: 15px 3px;
-        text-align: left;
-        border: 1px solid #ddd;
-        font-size: 0.8rem;
-        /* background-color: antiquewhite; */
-
-    }
-    .content-table td{
-        border: 1px solid #ddd;
-        padding: 10px 4px;
-        font-size: 0.8rem;
+        /* background-color: red; */
+        margin: 0  1rem 0;
     }
 
-
-    .footer {
-        height: 5rem;
-        width: 96%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+    .content-table td {
+        padding: 9px 4px;
+        font-size: 0.75rem;
     }
-    
-    a {
-        text-decoration: none;
-        display: inline-block;
-        width: 5.9%;
-        height: 65%;
-        font-size: 2.35rem;
-    }
-    
 }
