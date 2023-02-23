@@ -61,6 +61,8 @@ main {
     width: 97%;
     margin-left: 2%;
     padding-bottom: 1%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
 }
 
 .horizontal-line {
@@ -113,8 +115,11 @@ main {
 }
 .table-holder
 {
+    margin: 8px 8px;
     max-height: 525px;
     overflow: scroll;
+    /* box-shadow: 1px 3px 10px black; */
+
 }
 .content-table {
     border-collapse: collapse;

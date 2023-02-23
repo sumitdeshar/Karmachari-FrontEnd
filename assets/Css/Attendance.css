@@ -161,9 +161,6 @@ main {
     border-radius: 8px;
     text-transform: capitalize;
     cursor: pointer;
-}
-
-.toggle__option {
     display: flex;
     justify-content: center;
     border-color: white;
